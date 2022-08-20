@@ -1,0 +1,22 @@
+﻿<Window x:Class="Goosle.AdditionalInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Goosle"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Title="AdditionalInformation" Height="200" Width="520">
+    <Grid>
+        <Grid x:Name="grid" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="520" Background="#11698e" MouseDown="grid_MouseDown">
+            <Button HorizontalAlignment="Right" Height="35" Margin="0,0,0,0" VerticalAlignment="Top" Width="35" Style="{StaticResource TitleBarButtonClose}" Click="buttonClose_Click">
+                <Image HorizontalAlignment="Right" Height="18" Width="18" Source="Icons\Close.png" RenderTransformOrigin="4.315,1.5" VerticalAlignment="Top" Margin="1,1,0,0"/>
+            </Button>
+            <Label Content="Информация о выбранном студенте/преподавателе" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="#f8f1f1" FontSize="18"/>
+        </Grid>
+        <TextBox x:Name="textBox" Margin="20,60,20,20" BorderBrush="White" TextWrapping="Wrap" Text="TextBox" FontSize="18"/>
+
+    </Grid>
+</Window>

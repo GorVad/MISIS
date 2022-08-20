@@ -1,0 +1,86 @@
+﻿<Page x:Class="Goosle.Views.LessonView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Goosle.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LessonView"
+      Background="White">
+
+    <Grid>
+        <Border HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="2" CornerRadius="8">
+            <ComboBox 
+                x:Name="GroupList"
+                DisplayMemberPath="Name"
+                SelectedValuePath="Name"
+                SelectionChanged="GroupList_SelectionChanged"
+                FontSize="13"
+                Style="{StaticResource theComboBox}"
+                Padding="15,5,15,5"
+                HorizontalContentAlignment="Left"
+                VerticalAlignment="Center"
+                MinWidth="150"
+                MaxWidth="150"
+                Grid.Row="1"
+                Grid.Column="1"
+                ItemContainerStyle="{StaticResource theComboBoxItem}">
+            </ComboBox>
+        </Border>
+        <Border HorizontalAlignment="Left" Margin="197,40,0,0" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="2" CornerRadius="8">
+            <ComboBox 
+                x:Name="SubjectsBox"
+                DisplayMemberPath="Name"
+                SelectedValuePath="Name"
+                SelectionChanged="LessonList_SelectionChanged"
+                FontSize="13"
+                Style="{StaticResource theComboBox}"
+                Padding="15,5,15,5"
+                HorizontalContentAlignment="Left"
+                VerticalAlignment="Center"
+                MinWidth="150"
+                MaxWidth="150"
+                Grid.Row="1"
+                Grid.Column="1"
+                ItemContainerStyle="{StaticResource theComboBoxItem}">
+            </ComboBox>
+        </Border>
+        <TextBlock FontSize="14" FontWeight="Regular" HorizontalAlignment="Left" Margin="206,16,0,0" TextWrapping="Wrap" Text="Предмет" VerticalAlignment="Top"/>
+        <TextBlock FontSize="14" FontWeight="Regular" HorizontalAlignment="Left" Margin="28,16,0,0" TextWrapping="Wrap" Text="Группа" VerticalAlignment="Top"/>
+        <TextBlock FontSize="14" FontWeight="Regular" HorizontalAlignment="Left" Margin="384,16,0,0" TextWrapping="Wrap" Text="Дата" VerticalAlignment="Top"/>
+        <ListView x:Name="StudentsListView" ItemContainerStyle="{DynamicResource ListViewItemStyle}" BorderThickness="2" Padding="-1" BorderBrush="#3F9EA0" Margin="20,100,40,57" Background="White">
+            <ListView.View>
+                <GridView ColumnHeaderContainerStyle="{DynamicResource ListViewHeaderStyle}">
+                    <GridViewColumn Header="Студент" Width="250">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Border Margin="-11,-5,0,-5" Padding="10,0,15,0" Height="28" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{Binding Color}">
+                                    <TextBlock Margin="5, 5" Text="{Binding Name}"/>
+                                </Border>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Присутствие" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox Margin="33,2,0,0" IsChecked="{Binding isAttend}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Баллы" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Margin="20,0,0,0" Width="50" TextAlignment="Center" Text="{Binding Points}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Border Height="30" Width="150" HorizontalAlignment="Left" Margin="375,39,0,0" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="2" CornerRadius="8">
+            <DatePicker SelectedDateChanged="LessonList_SelectionChanged" x:Name="DateBox" VerticalAlignment="Center" HorizontalAlignment="Stretch" BorderThickness="0" />
+        </Border>
+        <Button Click="Button_Click" Content="Сохранить" Style="{StaticResource LoginButton}" HorizontalAlignment="Left" Margin="20,0,0,23" VerticalAlignment="Bottom" Width="134" Height="26"/>
+    </Grid>
+</Page>
