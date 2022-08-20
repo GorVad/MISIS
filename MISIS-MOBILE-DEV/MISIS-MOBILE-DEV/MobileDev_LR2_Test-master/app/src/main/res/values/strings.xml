@@ -1,0 +1,25 @@
+<resources>
+    <!--All the string resources come here including Questions and title -->
+    <string name="app_name">Тест на знание мобильной разработки!</string>
+    <string name="correct"><b>Количество правильных ответов:</b> \n
+                           <b>%1$d</b> из 6</string>
+
+    <string name="true_text">Да</string>
+    <string name="false_text">Нет</string>
+
+    <string name="correct_answer">Это правильный ответ!:)</string>
+    <string name="wrong_answer">Это неправильный ответ!:(</string>
+
+    <string name="a">1. Вы сейчас пользуетесь Android Studio?</string>
+    <string name="b">2. Разработчик должен обладать следующими навыками:\n \t
+                     <b>Рисование</b>\n \t
+                     <b>Любить животных</b></string>
+    <string name="c">3. Котики - лучшие друзья разработчиков?</string>
+    <string name="d">4. Обязательно ли наличие клавиатуры для написания программы?</string>
+    <string name="e">5. Ты готов к послледнему вопросу?</string>
+    <string name="f">6. Разработчики лучше аналитиков?</string>
+
+    <string name="next_text">Далее</string>
+    <string name="previous_text">Назад</string>
+
+</resources>

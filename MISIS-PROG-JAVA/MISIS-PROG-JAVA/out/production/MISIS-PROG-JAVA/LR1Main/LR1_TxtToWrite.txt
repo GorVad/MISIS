@@ -1,0 +1,76 @@
+�If someone looks up and to the left while they say something, they’re lying to you. If they’re tugging at their 
+sleeves, they’re not being truthful. A stutter? Don’t believe a word out of their mouth! 
+How many of these adages about detecting deceit have you heard before? From folk psychology to 
+polygraph tests to truth serums, humans love the idea of a lie detector. The truth, as renowned psychologist 
+and recognized authority on lying Paul Ekman points out, is that there is no Pinnochio nose that someone is 
+definitely lying that applies to all people. People can have individual tells that can be learned, and certain 
+physical changes, when viewed holistically, can be a good guideline, but a perfect lie-detecting system is yet 
+to exist. 
+That being said, some people are really good at telling when someone’s lying. You’ve probably encountered 
+some — the player at the poker table who always seems to know when someone’s bluffing, or your second-
+grade teacher who could somehow always tell that your dog didn’t actually eat your homework. Machines 
+have come close as well: the polygraph test, though not always accurate, is considered reliable enough to 
+use in a police investigation, and in many states, to cite in a courtroom. These people and machines do it by 
+observing fluctuations in pupil dilation, blushing, and a variety of other body language tells to single liars 
+out from the crowd. There is a general set of heuristics that lie detectors — both people and machines — use 
+to figure out if a person is lying. In the case of people, there’s no mental formula that good lie detectors 
+filter information through to tell if someone is lying, it more or less boils down to attentive intuition. While 
+the polygraph test uses more concrete, quantifiable data like heart rate and blood pressure, any of the 
+physiological changes it measures can also occur for reasons other than lying. 
+Instead of using just intuition or physiological changes exclusively, we can now take advantage of the 
+totality of the data that’s readily available to us. With advances in AI, it could be possible that we may live 
+in a world where we know how to detect truth with absolute certainty. 
+Let’s delve a little further into the current most widely accepted lie-detecting system: the polygraph test. The 
+instrument used in polygraph tests is a physiological record that assesses various physical parameters, 
+otherwise known as ‘tells’. Pneumographs are wrapped around the chest to measure the rate of respiration. 
+Cardiovascular activity is assessed by a blood pressure cuff. Skin conductivity is estimated through 
+electrodes attached to the person’s fingertips. Apart from everyday intuition, the polygraph is the most 
+common method used in detecting lies. However, considering that its primary use is in a high-stakes 
+investigatory or courtroom setting, the margin of error is too close for comfort. Moreover, they are invasive 
+and require an experienced human interviewer to conduct the interrogation and interpret the results. The 
+validity of the polygraph has been called into question time and time again, with critics citing the fact that 
+the physiological parameters measured only have a proven causal link to nervous excitement, not 
+necessarily to lying. 
+Another lie detection system, the Psychologically Based Credibility Assessment Tool (PBCAT), belongs to 
+a school of thought within deception research following something called the cognitive load approach 
+(CLA). Cognitive load is a term used to refer to the amount of mental tax or effort needed to complete a 
+certain task. The CLA proposes that lying requires a higher cognitive load, which then results in certain 
+patterns of behavior. In studies used to develop the PBCAT, researchers found that participants were able to 
+identify deception in others more easily when the lying participants had to recount events in backward order, 
+as this creates a heavier cognitive load. The PBCAT is a system with 9 different rating scales meant to be 
+used by humans to assess the truthfulness of another person’s story. These scales are based largely on the 
+semantic content of the story, including the number of contradictions in their story, the amount of sensory 
+detail, and how vague or precise the person was. 
+All of these lie-detecting systems focus exclusively on one measure to reach a conclusion about whether 
+someone is lying. Humans rely on intuition, polygraphs on physiological changes, and the PBCAT on 
+semantic content. To create a truly comprehensive lie detector, we need to look at a wide range of 
+parameters when it comes to telling if someone is lying or not. The parameters measured by the polygraph 
+are a good place to start, but we should also try to identify the factors that inform human intuition on 
+deception, and see how we might be able to quantify these factors. The underlying principle of the PBCAT, 
+which is that lying requires more of a cognitive load than telling the truth, would manifest itself not just in 
+the storytelling of the subject, but presumably in their brain activity as well, which could be measured using 
+EEG data. 
+Additionally, another drawback of the lie-detecting systems discussed above is that they all require human 
+judgment in order to make an assessment. Each requires a human interpreter to make sense of the results, 
+and in the case of the PBCAT, it’s a human who is doing all of the scoring in the first place. What if we 
+could take what works from all of these systems, and create an artificial intelligence-based system that is 
+smart enough to make such assessments, without the human bias? 
+One recently developed lie-detecting system has put us one step closer to that goal, using AI to assess 
+deception based on a parameter that existing systems have largely ignored: facial expression. Facial 
+expression is crucial to our intuitive sense of when someone is lying, but it is difficult to quantify has left it 
+out of structured lie-detecting systems for a long time — until now. 
+Researchers from the University of Maryland developed the Deception Analysis and Reasoning Engine 
+(DARE), a system that uses artificial intelligence to autonomously detect deception in courtroom trial 
+videos. DARE was taught to look for human expressions, such as “lips protruded” or “eyebrows frown,” and 
+also analyze audio frequency for revealing vocal patterns that indicate whether a person is lying or not. It 
+was then tested using a training set of videos in which actors were instructed to either lie or tell the truth. 
+Researchers at Cornell University also made a system that is built on the foundations of DARE. The system 
+made at Cornell primarily focuses on deception detection in real-life courtroom trial videos. The researchers 
+also showed that predictions of brief, fast facial movements could be used as features for deception 
+prediction. The system was trained using videos of human expressions which lead to the system defining 
+different classifiers based on various visual filters. A classifier is a function that gives a predicted value of 
+the output that is used to assign categorical labels to particular data points in the dataset. Each classifier 
+received a certain score that corresponded to a weight. Larger weight meant that the system would place 
+more importance on that classifier when detecting a lie. For example, the researchers observed 
+that“Eyebrows Raise” (~70% efficient) was more effective than other micro-expressions. 
+ 
